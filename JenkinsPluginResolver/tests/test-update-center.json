@@ -1,0 +1,112 @@
+updateCenter.post(
+{
+  "connectionCheckUrl": "http://www.google.com/",
+  "core": {
+    "test_key": "test_value",
+    "test_key2": "test_value2"
+  },
+  "id": "default",
+  "plugins": {
+    "plugin_1": {
+      "buildDate": "Mar 01, 2011",
+      "dependencies": [
+        {
+          "name": "plugin_2",
+          "optional": false,
+          "version": "9.9"
+        }
+      ],
+      "developers": [
+        {
+          "developerId": "developerId_1",
+          "email": "email_1@internet.com",
+          "name": "name_1"
+        }
+      ],
+      "excerpt": "excerpt_1",
+      "gav": "gav_1",
+      "labels": [
+        "labels_1"
+      ],
+      "name": "name_1",
+      "releaseTimestamp": "releaseTimestamp_1",
+      "requiredCore": "requiredCore_1",
+      "scm": "scm_1",
+      "sha1": "sha1_1",
+      "title": "title_1",
+      "url": "url_1",
+      "version": "version_1",
+      "wiki": "wiki_1"
+    },
+    "plugin_2": {
+      "buildDate": "Mar 02, 2011",
+      "dependencies": [
+        {
+          "name": "plugin_3",
+          "optional": false,
+          "version": "9.9"
+        }
+      ],
+      "developers": [
+        {
+          "developerId": "developerId_2",
+          "email": "email_2@internet.com",
+          "name": "name_2"
+        }
+      ],
+      "excerpt": "excerpt_2",
+      "gav": "gav_2",
+      "labels": [
+        "labels_2"
+      ],
+      "name": "name_2",
+      "releaseTimestamp": "releaseTimestamp_2",
+      "requiredCore": "requiredCore_2",
+      "scm": "scm_2",
+      "sha1": "sha1_2",
+      "title": "title_2",
+      "url": "url_2",
+      "version": "version_2",
+      "wiki": "wiki_2"
+    },
+    "plugin_3": {
+      "buildDate": "Mar 03, 2011",
+      "dependencies": [
+        {
+          "name": "plugin_1",
+          "optional": false,
+          "version": "9.9"
+        }
+      ],
+      "developers": [
+        {
+          "developerId": "developerId_3",
+          "email": "email_3@internet.com",
+          "name": "name_3"
+        }
+      ],
+      "excerpt": "excerpt_3",
+      "gav": "gav_3",
+      "labels": [
+        "labels_3"
+      ],
+      "name": "name_3",
+      "releaseTimestamp": "releaseTimestamp_3",
+      "requiredCore": "requiredCore_3",
+      "scm": "scm_3",
+      "sha1": "sha1_3",
+      "title": "title_3",
+      "url": "url_3",
+      "version": "version_3",
+      "wiki": "wiki_3"
+    }
+  },
+  "signature": {
+    "certificates": [
+      "a very large block of text"
+    ],
+    "test_key3": "test_key3"
+  },
+  "updateCenterVersion": "1"
+}
+);

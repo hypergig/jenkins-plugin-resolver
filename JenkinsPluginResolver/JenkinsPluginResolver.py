@@ -26,8 +26,12 @@ class JenkinsPluginResolver(object):
     def load(self, plugin, version='latest'):
         # prevent a circular dependency from causing an infinite loop
         if plugin not in self._plugins:
+            try:
+                dependencies = self._uc_post['plugins'][plugin]['dependencies']
+            except KeyError:
+                raise RuntimeError(
+                    "plugin '%s' doesn't exist in the Update Center" % plugin)
             self._plugins[plugin] = version
-            dependencies = self._uc_post['plugins'][plugin]['dependencies']
             for dependency in dependencies:
                 self.load(dependency['name'])
         # support for version pinning, user specified versions override latest
