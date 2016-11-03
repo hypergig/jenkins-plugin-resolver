@@ -1,6 +1,10 @@
 # Jenkins Plugin Resolver #
 Handy python thing that wraps up resolving Jenkins plugin dependencies via the Jenkins Update Center. To be used with the [Jenkins docker plugins.sh script](https://github.com/jenkinsci/docker/blob/master/plugins.sh) to automate dependency resolution. Related to [issue 147](https://github.com/jenkinsci/docker/issues/147).
 
+# GOOD NEWS! #
+Jenkins has finally incorperated plugin dependency resolution into their docker image!
+https://github.com/jenkinsci/docker/tree/master#preinstalling-plugins
+
 # How to use it #
 * Import the module
 ```
